@@ -1,0 +1,39 @@
+<app-nav></app-nav>
+<div class="container">
+    <div class="row">
+        <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+            <div class="row m-5 p-5">
+                <h2 class="text-secondary text-center">Add Patients</h2>
+                <hr>
+
+                <div class="col col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6 g-3">
+                    <label for="" class="label-control">Name</label>
+                    <input name="name" [(ngModel)]="name" type="text" class="form-control">
+                </div>
+                <div class="col col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6 g-3">
+                    <label for="" class="label-control">Doctor</label>
+                    <input name="doctor" [(ngModel)]="doctor" type="text" class="form-control">
+                </div>
+
+                <div class="col col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6 g-3">
+                    <label for="" class="label-control">Age</label>
+                    <input name="age" [(ngModel)]="age" type="text" class="form-control">
+                </div>
+                <div class="col col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6 g-3">
+                    <label for="" class="label-control">Image</label>
+                    <input name="img" [(ngModel)]="img" type="text" class="form-control">
+                </div>
+                
+                
+
+                <div class="col col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6 g-3">
+                    <button class="btn btn-success" (click)="readValues()">Submit</button>
+                </div>
+
+
+
+                
+            </div>
+        </div>
+    </div>
+</div>

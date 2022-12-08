@@ -1,0 +1,30 @@
+<app-nav></app-nav>
+<div class="container">
+    <div class="row">
+        <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+            <div class="row m-5 p-5">
+                <h2 class="text-secondary text-center">View Patients</h2>
+                <hr>
+                
+                <div class="row g-4" >
+                    <div *ngFor="let i of data" class="col col-12 col-sm-6 col-md-4 col-lg-4 col-xl-4 col-xxl-4 g-5">
+
+                        <div class="card" >
+                            <img height="350 px" src="{{i.img}}" class="card-img-top" alt="...">
+                            <div class="card-body">
+                            <h5 class="card-title">{{i.name}}</h5>
+                            </div>
+                            <ul class="list-group list-group-flush">
+                            <li class="list-group-item">Doctor: {{i.doctor}}</li>
+                            <li class="list-group-item">Age: {{i.age}}</li>
+                            </ul>
+                            
+                        </div>
+                    </div>
+                </div>
+                
+
+            </div>
+        </div>
+    </div>
+</div>
